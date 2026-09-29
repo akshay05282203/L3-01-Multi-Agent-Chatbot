@@ -1,24 +1,23 @@
-Yes. Here is a **shorter, clean GitHub README** that keeps the important technical information without becoming too long or looking copied.
 
-# 🧭 Atlas — Multi-Agent Research Chatbot
+# 🛰️ Atlas — Multi-Agent Research Chatbot
 
 An AI-powered research chatbot built with **LangChain, Groq, Tavily, BeautifulSoup, and Streamlit**. Atlas automates web research by searching for relevant information, extracting webpage content, generating a research report, and evaluating the report.
 
-## ✨ Features
+## 🎯 Features
 
-* 🤖 Multi-agent research workflow
-* 🔎 Tavily-powered web search
-* 🌐 Web scraping with BeautifulSoup
-* 🧰 Custom tool calling
-* 📝 Automated research report generation
-* 🔍 AI-based report evaluation
+* 🧩 Multi-agent research workflow
+* 🕵️ Tavily-powered web search
+* 📚 Web scraping with BeautifulSoup
+* 🛠️ Custom tool calling
+* ✍️ Automated research report generation
+* 🧑‍⚖️ AI-based report evaluation
 * 🔗 LCEL Writer and Critic chains
-* ⚡ Groq LLM integration
-* 🖥️ Streamlit interface
-* 📥 Markdown report download
-* 🔐 Environment-based API key management
+* 🧠 Groq LLM integration
+* 🎛️ Streamlit interface
+* 📦 Markdown report download
+* 🔑 Environment-based API key management
 
-## 🏗️ Architecture
+## 🧬 Architecture
 
 ```text
 User
@@ -27,22 +26,22 @@ User
 Research Topic
  │
  ▼
-🔎 Search Agent
+🕵️ Search Agent
  │
  ▼
 Tavily Search
  │
  ▼
-🌐 Reader Agent
+📚 Reader Agent
  │
  ▼
 BeautifulSoup Scraping
  │
  ▼
-📝 Writer Chain
+✍️ Writer Chain
  │
  ▼
-🔍 Critic Chain
+🧑‍⚖️ Critic Chain
  │
  ▼
 Final Research Report
@@ -70,7 +69,7 @@ writer_chain = writer_prompt | llm | StrOutputParser()
 critic_chain = critic_prompt | llm | StrOutputParser()
 ```
 
-## 🧰 Custom Tools
+## 🛠️ Custom Tools
 
 ### `web_search`
 
@@ -105,7 +104,7 @@ llm = ChatGroq(
 )
 ```
 
-## 🔄 Research Pipeline
+## 🔗 Research Pipeline
 
 ```text
 Research Topic
@@ -127,18 +126,18 @@ Critic Chain
 Evaluation
 ```
 
-## 🖥️ Streamlit Interface
+## 🎛️ Streamlit Interface
 
 Atlas provides a simple Streamlit interface where users can enter a research topic and view:
 
-* 📄 Research Report
-* 🔍 Critique
-* 🌐 Sources
-* 📃 Scraped Content
+* 📑 Research Report
+* 🧾 Critique
+* 🔗 Sources
+* 📚 Scraped Content
 
 Reports can be downloaded as Markdown files.
 
-## 📂 Project Structure
+## 🗃️ Project Structure
 
 ```text
 L3-01-Multi-Agent-Chatbot/
@@ -160,7 +159,7 @@ L3-01-Multi-Agent-Chatbot/
 | `tools.py`         | Search and scraping tools |
 | `requirements.txt` | Dependencies              |
 
-## 🛠️ Technologies
+## ⚡ Technologies
 
 * Python
 * LangChain
@@ -173,7 +172,7 @@ L3-01-Multi-Agent-Chatbot/
 * Pydantic
 * python-dotenv
 
-## ⚙️ Installation
+## 🧰 Installation
 
 ### Clone Repository
 
@@ -195,7 +194,7 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## 🔐 Configuration
+## 🔑 Configuration
 
 Create a `.env` file:
 
@@ -215,7 +214,7 @@ __pycache__/
 *.pyc
 ```
 
-## ▶️ Run
+## 🚦 Run
 
 Start the Streamlit application:
 
@@ -231,7 +230,7 @@ The pipeline can also be executed directly:
 python pipeline.py
 ```
 
-## 🎯 Concepts Demonstrated
+## 🧩 Concepts Demonstrated
 
 * Generative AI
 * AI Agents
@@ -248,7 +247,7 @@ python pipeline.py
 * Streamlit
 * Modular Python Architecture
 
-## 🚀 Future Improvements
+## 🔮 Future Improvements
 
 * LangGraph state-based workflow
 * Parallel research agents
@@ -260,14 +259,12 @@ python pipeline.py
 * Human-in-the-loop review
 * Docker and cloud deployment
 
-## 👤 Author
+## 🧑‍💻 Author
 
 **Akshay Chavan AI**
 
 **Interests:** Artificial Intelligence, Machine Learning, Generative AI, Agentic AI, Multi-Agent Systems, LangChain, LangGraph, RAG, AI Automation, and Data Science.
 
-## 📜 License
+## ⚖️ License
 
 This project is developed for educational, portfolio, and learning purposes.
-
-This version is **much shorter than the previous one**, but still contains the important parts: **architecture, agents, tools, LCEL, LLM, pipeline, project structure, setup, configuration, and run commands**.
